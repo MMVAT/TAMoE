@@ -1,7 +1,7 @@
 # 🚀 Interaction-Guided Mixture of Experts for  Weakly Supervised Imbalanced Audio-Visual Video Parsing
 This is the official code for the Interaction-Guided Mixture of Experts for  Weakly Supervised Imbalanced Audio-Visual Video Parsing.
 
-![image](https://github.com/MMVAT/M2MOE/blob/main/arch.png?raw=true)
+![image](https://github.com/MMVAT/TAMOE/blob/main/arch.png?raw=true)
 
 
 # 💻 Machine environment
@@ -84,7 +84,7 @@ bash test.sh
 ```
 
 # 🤝 Contributing
-We welcome contributions to the M2MOE project! To contribute:
+We welcome contributions to the TAMoE project! To contribute:
 
 1. **Fork the repository** and create a new branch for your feature
 2. **Ensure your code follows the project's coding standards**
