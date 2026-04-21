@@ -13,7 +13,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from dataloader_avvp import LLP_dataset
-from network_m2moe import M2MOE_Net
+from network_tamoe import TAMOE_Net
 from eval_metrics import segment_level, event_level
 import logging
 
@@ -345,7 +345,7 @@ def eval(args, model, data_loader, gt_csv_dir, criterion, device):
 
 def main():
     # Training settings
-    parser = argparse.ArgumentParser(description='Official Implementation of M2MOE')
+    parser = argparse.ArgumentParser(description='Official Implementation of TAMOE')
     parser.add_argument("--audio_dir", type=str, default='./data/CLAP/features', help="audio features dir")
     parser.add_argument("--video_dir", type=str, default='./data/CLIP/features', help="2D visual features dir")
     parser.add_argument("--st_dir", type=str, default='./data/r2plus1d_18', help="3D visual features dir")
@@ -461,7 +461,7 @@ def main():
     seed_everything(args.seed)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    model = M2MOE_Net(args).to(device)
+    model = TAMOE_Net(args).to(device)
 
     categories = ['Speech', 'Car', 'Cheering', 'Dog', 'Cat', 'Frying_(food)',
                   'Basketball_bounce', 'Fire_alarm', 'Chainsaw', 'Cello', 'Banjo',
