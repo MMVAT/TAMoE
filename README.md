@@ -17,14 +17,14 @@ This is the official code for the Interaction-Guided Mixture of Experts for  Wea
 # 🛠 Environment Setup
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/M2MOE.git
-cd M2MOE
+git clone https://github.com/MMVAT/TAMoE.git
+cd TAMoE
 ```
 
 2. Create and activate the conda environment:
 ```bash
 conda env create -f environment.yaml
-conda activate m2moe
+conda activate tamoe
 ```
 
 # 📂 Data Preparation
