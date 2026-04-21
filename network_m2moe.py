@@ -6,7 +6,7 @@ import numpy as np
 from fusion_model import ConcatFusion
 from copy import deepcopy
 from module.moepp_layer import MoEPlusPlusEncoderLayer, Linear
-from module.m2moe import InteractionMoE
+from module.tamoe import InteractionMoE
 
 
 def _get_clones(module, N):
