@@ -310,9 +310,9 @@ class MoEPlusPlusTransformer(nn.Module):
 
 
 
-class M2MOE_Net(nn.Module):
+class TAMOE_Net(nn.Module):
     def __init__(self, args, mode='train', device='cuda'):
-        super(M2MOE_Net, self).__init__()
+        super(TAMOE_Net, self).__init__()
 
         self.fc_a = nn.Linear(args.input_a_dim, args.hidden_dim)
 
