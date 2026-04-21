@@ -1,4 +1,4 @@
-name: adda
+name: tamoe
 channels:
   - pytorch
   - conda-forge
